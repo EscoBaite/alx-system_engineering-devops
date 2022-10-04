@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# configures a new server then adds the header X-Served-By
+
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo ufw allow 'Nginx HTTP'
+sudo sed -i 's/http {/&\n\tadd_header X-Served-By $HOSTNAME;/' /etc/nginx/nginx.conf
+sudo service nginx restart
