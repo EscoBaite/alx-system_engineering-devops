@@ -1,4 +1,4 @@
-<img src=./image.png width=50%>
+<img src=./image.jpg width=50%>
 
 # Librarify requests failure report
 Recently it was reported that the Librarify platform was returning 500 Error on all requests made on the platform routes, 
